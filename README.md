@@ -1,6 +1,7 @@
 Die Pakete lassen sich sehr gut in logische Gruppen sortieren. Dann musst du nicht mehr 12 Namen einzeln auswendig lernen.
 
 [Webpack](Webpack.md)
+[MySql2](Mysql.md)
 
 # 1. React selbst
 ```bash
