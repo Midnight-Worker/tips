@@ -25,37 +25,41 @@ webpack-cli         = damit du webpack per Terminal starten kannst
 webpack-dev-server  = Entwicklungsserver mit Live Reload
 ```
 Merksatz:
-
+```bash
 webpack baut.
 webpack-cli startet den Bau.
 webpack-dev-server zeigt den Bau live im Browser.
-3. TypeScript für React
+```
+# 3. TypeScript für React
+```bash
 npm install -D typescript ts-loader @types/react @types/react-dom
-
+```
 Gehören zusammen:
-
+```bash
 typescript       = eigentlicher TypeScript-Compiler
 ts-loader        = verbindet TypeScript mit Webpack
 @types/react     = TypeScript-Beschreibungen für React
 @types/react-dom = TypeScript-Beschreibungen für React-DOM
-
+```
 Merksatz:
-
+```bash
 typescript kann TS übersetzen.
 ts-loader bringt es in Webpack.
 @types/... erklärt TypeScript fremde Bibliotheken.
-4. SCSS / CSS-Kette
+```
+# 4. SCSS / CSS-Kette
+```bash
 npm install -D sass sass-loader css-loader style-loader
-
+```
 Gehören zusammen:
-
+```bash
 sass         = eigentlicher SCSS-Compiler
 sass-loader  = verbindet Sass mit Webpack
 css-loader   = macht CSS importierbar
 style-loader = schreibt CSS in die Webseite
-
+```
 Die Kette:
-
+```bash
 .scss
   ↓
 sass-loader
@@ -69,23 +73,27 @@ CSS als JS-Modul
 style-loader
   ↓
 <style> im Browser
-
+```
 Merksatz:
-
+```bash
 sass übersetzt SCSS.
 css-loader macht CSS importierbar.
 style-loader bringt CSS in die Seite.
-5. HTML-Erzeugung
+```
+# 5. HTML-Erzeugung
+```bash
 npm install -D html-webpack-plugin
-
+```
 Gehört eher allein:
-
+```bash
 html-webpack-plugin = erzeugt/verwendet HTML und hängt dein Bundle ein
-
+```
 Merksatz:
-
+```bash
 Plugin baut die Startseite um das Bundle herum.
+```
 Gesamtübersicht
+```bash
 React:
   react
   react-dom
@@ -109,7 +117,9 @@ SCSS:
 
 HTML:
   html-webpack-plugin
-Als Installationsblöcke
+```
+# Als Installationsblöcke
+```bash
 # React
 npm install react react-dom
 
@@ -124,7 +134,9 @@ npm install -D sass sass-loader css-loader style-loader
 
 # HTML
 npm install -D html-webpack-plugin
-Die wichtigste Daumenregel
+```
+# Die wichtigste Daumenregel
+```bash
 Bibliothek:
   Das benutzt dein Code direkt.
   Beispiel: react, react-dom
@@ -144,9 +156,9 @@ Plugin:
 CLI/Server:
   Damit steuerst du Webpack.
   Beispiel: webpack-cli, webpack-dev-server
-
+```
 Und ganz kurz:
-
+```bash
 react + react-dom
 = App schreiben
 
@@ -158,6 +170,6 @@ typescript + ts-loader + @types/...
 
 sass + sass-loader + css-loader + style-loader
 = SCSS verstehen
-
+```
 html-webpack-plugin
 = HTML automatisch vorbereiten
