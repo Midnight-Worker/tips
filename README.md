@@ -1,26 +1,29 @@
 Die Pakete lassen sich sehr gut in logische Gruppen sortieren. Dann musst du nicht mehr 12 Namen einzeln auswendig lernen.
 
-1. React selbst
+# 1. React selbst
+```bash
 npm install react react-dom
-
+```
 Gehören zusammen:
-
+```bash
 react      = React-Kern
 react-dom  = React im Browser anzeigen
-
+```
 Merksatz:
-
+```bash
 react denkt.
 react-dom malt es in die Webseite.
-2. Webpack-Grundsystem
+```
+# 2. Webpack-Grundsystem
+```bash
 npm install -D webpack webpack-cli webpack-dev-server
-
+```
 Gehören zusammen:
-
+```bash
 webpack             = der Bundler
 webpack-cli         = damit du webpack per Terminal starten kannst
 webpack-dev-server  = Entwicklungsserver mit Live Reload
-
+```
 Merksatz:
 
 webpack baut.
