@@ -7,7 +7,7 @@ Dann kannst du es in Node.js einbinden. Für dein MVC-Projekt würde ich direkt 
 # 1. Datenbankverbindung anlegen
 
 Lege zum Beispiel diese Datei an:
-```bash
+```js
 config/database.js
 // config/database.js
 
