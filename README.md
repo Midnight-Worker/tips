@@ -1,6 +1,6 @@
 Die Pakete lassen sich sehr gut in logische Gruppen sortieren. Dann musst du nicht mehr 12 Namen einzeln auswendig lernen.
 
-[Webpack.md](Webpack)
+[Webpack](Webpack.md)
 
 # 1. React selbst
 ```bash
